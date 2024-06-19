@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baseball game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      input {
+        font-size: 16px;
+        padding: 10px;
+        width: 100px;
+      }
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>야구 게임</h1>
+    <h3>숫자 3개를 입력해서 컴퓨터가 생각하고 있는 숫자를 맞춰보세요.</h3>
+    <h4 id="make-random">숫자를 입력하세요:</h4>
+    <input type="text" id="user-input" maxlength="3" />
+    <button onclick="playGame()">시도하기</button>
+    <div id="result"></div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
